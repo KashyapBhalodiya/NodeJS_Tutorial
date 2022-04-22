@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <h1>By default open the file this is basically convenstion</h1>
+    <a href="./a.html">A</a>
+    <a href="./b.html">B</a>
+    <br>
+
+    <h3>say Hello</h3>
+    <form action="/hello" method="GET">
+        <input type="text" name="user">
+        <button type="submit">SUBMIT</button>
+    </form>
+
+    <h3>Google Search</h3>
+    <!-- <form action="https://google.com/search" method="GET">
+        <input type="text" name="q" placeholder="searchquery">
+        <button type="submit">SEARCH</button>
+    </form> -->
+    <form method="GET">
+        <input type="text" name="q" placeholder="searchquery">
+        <button formaction="https://google.com/search" type="submit">SEARCH GOOGLE</button>
+        <button formaction="https://bing.com/search" type="submit">SEARCH BING</button>
+    </form>
+
+<!-- 3_server.js -->
+    <h1>Code Evaluator</h1>
+
+    <textarea id="inpCode" rows="6" cols="50">
+    </textarea>
+    <br>
+    <button id="btnEncode">ENCODE</button>
+
+    <form action="/eval" method="GET">
+        <input style="width: 500px;" type="text" name="code" id="code">
+        <br>
+        <button type="button" id="btnEncrypt">ENCRYPT</button>
+        <br>
+        <button type="submit">EVALUATE</button>
+    </form>
+</body>
+</html>

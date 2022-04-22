@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-I</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NOTE: ID V/S CLASS
+        class applies a style to multiple elements
+        id applies to style to unique element
+
+
+        CSS order:
+        ID > CLASS > ELEMENT > *
+        #  >  .    > p, ...  > *
+    -->
+    <p class="osmpara">Hello Everyone</p>
+    <p class="bigpara">Hey what's app!</p>
+    <p class="osmpara bigpara">What is your name?</p>
+
+
+    <!-- DIV -->
+    <div class="div1">
+        DIV-I
+        <div class="div2">
+            DIV-II
+            <div class="div3">
+                DIV-III
+            </div>
+        </div>
+    </div>
+
+    <!---------------- Combinators --------------------------->
+    <!-- Basic Selectors:
+    
+    Universal selectors: *
+    Type selectors: Like tag. Ex: p, li, a
+    Class selectors: .class_name
+    ID selectors: #id_name
+    Attribute selectors: Syntax: [attr] - Represents elements with an attribute name of attr.
+    [attr=value], [attr=value], [attr|=value], [attr^=value], [attr$=value],
+    [attr*=value], [attr operator value i]
+    -->
+
+    <!-- Grouping selectors: (,)
+    The , selector is a grouping method that selects all the matching nodes.
+    Ex: div, span
+    -->
+
+    <!-- Combinators:
+    Descendant combinator:
+    The (space) combinator selects nodes that are descendants of the first element.
+    Ex: div span
+    
+    Child combinator:
+    The > combinator selects nodes that are direct children of the first element.
+    Ex: ul > li
+    
+    General sibling combinator:
+    The ~ combinator selects siblings. This means that the second element follows 
+    the first and both share the same parent.
+    Ex: p ~ span
+
+    Adjacent sibling combinator:
+    The + combinator matches the second element only if it immediately follows the first element.
+    Ex: h2 + p
+
+    Column combinator:
+    The || combinator selects nodes which belong to a column.
+    Ex: col || td
+    -->
+    
+    <!-- Psuedo:
+    Psuedo classes:
+    The : pseudo allow the selection of elements based on state information 
+    that is not contained in the document tree. 
+
+    Psuedo elements:
+    The :: pseudo represent entities that are not included in HTML.
+    
+    -->
+
+</body>
+</html>

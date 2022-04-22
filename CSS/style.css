@@ -1,0 +1,43 @@
+body {
+    margin: 30px;
+}
+
+p {
+    font-size: 25px;
+}
+
+.osmpara {
+    color: green;
+    background-color: lightcoral;
+}
+
+.bigpara {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blue;
+}
+
+* {
+    background-color: lightcyan;
+}
+
+.div1 {
+    background-color: lightpink;
+    font-style: italic;
+}
+
+.div2 {
+    background-color: lightslategray;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.div3 {
+    background-color: lightseagreen;
+    word-spacing: 10px;
+}
+
+div {
+    margin: 20px;
+    padding: 10px;
+    border: solid black 3px;
+}
